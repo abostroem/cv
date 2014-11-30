@@ -1,0 +1,144 @@
+% LaTeX resume using res.cls
+\let\nofiles\relax  %let latex create .aux
+\documentclass{res}
+\usepackage{bibentry}
+\usepackage{url}
+\usepackage{color}
+\usepackage{aas_macros}
+\usepackage{hanging}
+\usepackage{natbib}
+\bibliographystyle{apj}
+\newcommand\hangbibentry[1]{%
+    \smallskip\par\hangpara{1em}{1}\bibentry{#1}\smallskip\par %{indent}{afterline}
+}
+
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font  
+\setlength{\topmargin}{-0.6in}  % Start text higher on the page 
+\setlength{\textheight}{9.8in}  % increase textheight to fit more on a page
+\setlength{\headsep}{0.2in}     % space between header and text
+\setlength{\headheight}{12pt}   % make room for header
+\usepackage{fancyhdr}  % use fancyhdr package to get 2-line header
+\renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
+%\lhead{\hspace*{-\sectionwidth}Justin Ely} % force lhead all the way left
+%\rhead{Page \thepage}  % put page number at right
+\cfoot{}  % the footer is empty
+\pagestyle{fancy} % set pagestyle for the document
+
+\begin{document} 
+\nobibliography{refs.bib}
+{\LARGE \bf{Publications and Presentations}}\\
+{\rule{\linewidth}{0.5mm}}
+\begin{resume}
+
+\section{PUBLICATIONS}
+\vspace{-.2in} 
+\begin{center}
+\line(1,0){425}
+\end{center}
+\vspace{-.25in} 
+\vspace{0.1in}
+
+
+Fox, O. D., {\bf Bostroem, K. A.}, Van Dyke, S., et al., {\bf A Search for the B-Star Binary Companion
+of the SN 1993J Progenitor}, \emph{in prep}
+
+Rodney, S. A., Riess, A. G., Strolger, L. G., et al., {\bf Type Ia Supernova Rate Measurements to Redshift 2.5 from CANDELS: Searching for Prompt Explosions in the Early Universe}, \emph{in prep}
+
+Osten, R. A. and {\bf Bostroem, K. A.}, {\bf Examining the COS Spectroscopic Sensitivity Monitors}, \emph{in prep}
+
+Hart, K. and {\bf Bostroem, K. A.}, {\bf Characterization of the STIS NUV MAMA Vignetting by Optical Element}, \emph{in prep}
+
+\hangbibentry{2013A&A...558A..33A}
+\hangbibentry{2013cos..rept...16O}
+\hangbibentry{2013cos..rept....4K}
+\hangbibentry{2013cos..rept....1O}
+\hangbibentry{2012cos..rept....2O}
+\hangbibentry{2012stis.rept....1B}
+\hangbibentry{2012stis.rept....3W}
+\hangbibentry{2011cos..rept....2O}
+
+
+
+\section{PRESENTATIONS}
+\vspace{-.2in} 
+\begin{center}
+\line(1,0){425}
+\end{center}
+\vspace{-.3in} 
+\vspace{0.1in} 
+{\bf Bostroem, K. A.}, {\bf Post-SM4 Sensitivity Calibration of the STIS Echelle Modes}, STScI TIPS/JIM Monthly Meeting, March 2012
+
+\section{CONFERENCE ABSTRACTS/PROCEEDINGS}
+\vspace{-.2in} 
+\begin{center}
+\line(1,0){425}
+\end{center}
+\vspace{-.24in} 
+\vspace{0.1in}
+
+\hangbibentry{2013msao.confE..56B}
+\hangbibentry{2013AAS...22231607H}
+\hangbibentry{2013AAS...22231606T}
+\hangbibentry{2013AAS...22134404P}
+\hangbibentry{2013AAS...22134403O}
+\hangbibentry{2013AAS...22125004B}
+\hangbibentry{2012SPIE.8443E..4CS}
+\hangbibentry{2012AAS...22013605E}
+\hangbibentry{2012AAS...22013601D}
+\hangbibentry{2012AAS...21924116E}
+\hangbibentry{2012AAS...21924115B}
+\hangbibentry{2011SPIE.8145E.257S}
+\hangbibentry{2011AAS...21833102W}
+\hangbibentry{2011AAS...21725402P}
+\hangbibentry{2010hstc.workE..51B}
+\hangbibentry{2010hstc.workE..47Z}
+\hangbibentry{2010hstc.workE...6P}
+\hangbibentry{2010hstc.workE...3A}
+\hangbibentry{2010AAS...21641306W}
+
+\section{TEACHING EXPERIENCE}
+\vspace{-.2in} 
+\begin{center}
+\line(1,0){425}
+\end{center}
+\vspace{-.24in} 
+\vspace{0.1in}
+   {\bf  Workshop Co-Leader, Software Carpentry Bootcamps } \\
+         Two day workshop introducing scientists to the programming skills to improve their research including Python, GIT, SVN, Shell, test-driven developement, object oriented and functional programming. \\
+        \begin{itemize}
+        \item[] STScI, Sept 2013, Baltimore, MD
+        \item[] UC Davis, May 2013, Davis, CA
+        \item[] Lawrence Berkeley National Laboratory, May 2013, Berkeley, CA
+        \item[] University of Maryland, April 2013, Baltimore, MD
+        \item[] University of Edinburgh, December 2012, Edinburgh, United Kingdom
+        \item[] George Mason University, October 2012, Fairfax, VA
+        \end{itemize} 
+    {\bf  Lead Teaching Assistent,} Fall 2008  \\
+         Student supervisor of all Introduction to Astronomy Lab instructors at San Diego State University, 
+         San Diego, CA. Duties included editing the Lab Manual and training new instructors. \\
+		 
+   {\bf  Introduction to Astronomy Lab Instructor,} Fall 2009 - Spring 2009  \\
+         Taught the Introduction to Astronomy Lab at San Diego State University, San Diego, CA. 
+         Designed curriculum and created lesson plans. \\
+         
+   {\bf Project Astro Astronomer, } Fall 2007 - Spring 2008 \\
+   		Brought hands on astronomy projects to a 3rd grade class in San Diego, CA \\
+
+   {\bf Private Tutor, } Fall 2006 - Spring 2009 \\
+   		Tutors middle and high school students in mathematics, physics, chemistry, and Spanish in Escondido, CA. \\
+   		
+   {\bf Mathematics Teacher, } Summer 2006 \\
+   		Designed the curriculum for, created lesson plans for, and taught 1st - 6th grade 
+   		mathematics at the Ross Valley Summer School, Ross Valley, CA. \\
+   	
+   {\bf Student Teacher, } Fall 2006 \\
+   		Taught 5 periods of High School mathematics at Poughkeepsie High School, Poughkeepsie, NY \\
+   	
+   {\bf Science Teacher, } Summer 2003, 2004
+   		Designed the curriculum for, created lesson plans for, and taught 6th, 7th, and 8th grade \\
+   		science courses at Crossroads Summer Camp, San Rafael, CA.
+
+
+\end{resume}
+\end{document}
