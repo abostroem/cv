@@ -1,6 +1,35 @@
-% LaTeX resume using res.cls
-\let\nofiles\relax  %let latex create .aux
-\documentclass{res}
+\documentclass[10pt]{cv}
+\font\cap=cmcsc10
+\usepackage{amsmath}
+
+\topmargin 0pt
+\headheight 0pt
+\headsep 0pt
+\textheight 9in
+\pagestyle{empty}
+\parindent 0.08in
+\parskip \baselineskip
+\topmargin 0in
+%\oddsidemargin 0in
+\oddsidemargin -0.25in
+%\evensidemargin 0in
+\evensidemargin -0.25in
+
+\textwidth 6.9in
+
+\setlength{\topmargin}{-0.25in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\topskip}{0.75in}
+\setlength{\textheight}{9in}
+\pagestyle{myheadings}
+\setlength{\parskip}{0in}
+
+%set the number in the second set of curly braces to the number you want displayed on
+%the first page
+%setcounter{page}{2}
+  
+
 \usepackage{bibentry}
 \usepackage{url}
 \usepackage{color}
@@ -23,7 +52,7 @@
 %\lhead{\hspace*{-\sectionwidth}Justin Ely} % force lhead all the way left
 %\rhead{Page \thepage}  % put page number at right
 \cfoot{}  % the footer is empty
-\pagestyle{fancy} % set pagestyle for the document
+%\pagestyle{fancy} % set pagestyle for the document
 
 \begin{document} 
 \nobibliography{refs.bib}
@@ -31,180 +60,138 @@
 \section{{\LARGE \bf{K. Azalee Bostroem}}}
 {\rule{\linewidth}{0.5mm}} \\
 \begin{minipage}{0.55\textwidth}
-\vspace{0.25cm}
 Department of Physics \\
 University of California, Davis \\
 Davis, CA
 \end{minipage}
 \begin{minipage}{0.45\textwidth}
-\color{blue}\url{http://azaleebostroem.wordpress.com}\\
+\begin{flushright}
+\vspace{0.25cm}
+\color{blue}\url{kabostroem@ucdavis.edu}\\
 \color{blue}\url{https://github.com/abostroem} \\
-\color{blue}\url{kabostroem@ucdavis.edu}
+\color{blue}\url{http://azaleebostroem.wordpress.com}
+\end{flushright}
 \end{minipage} \\
-\begin{resume}
-\section{EDUCATION}
-\vspace{-.2in} 
-\begin{center}
-\line(1,0){425}
-\end{center}
-\vspace{-.3in} 
+{\rule{\linewidth}{0.5mm}} 
+\vspace{-.5em}
+%\begin{resume}
+\begin{llist}
 \vspace{0.1in} 
-   {\bf Ph.D. in Physics}; University of California at Davis, Davis, CA; In Progress; GPA: 3.9/4.0 \\
+\sectiontitle{Education}
+%\vspace{0.1in} 
+   {\bf Ph.D. in Physics}; University of California at Davis, Davis, CA; In Progress; GPA: 3.91/4.0 \\
    {\bf M.S. in Astronomy}; San Diego State University, San Diego, CA; May 2009; GPA: 3.82/4.0 \\
    {\bf B.A. in Mathematics}; Vassar College, Poughkeepsie, NY; May 2006; GPA: 3.68/4.0 \\   
    {\bf California State and New York State Secondary Teaching Certifications in Mathematics} 
-\section{HONORS}
-\vspace{-.2in} 
-\begin{center}
-\line(1,0){425}
-\end{center}
-\vspace{-.3in} 
-\vspace{0.1in} 
+\sectiontitle{Honors}
+%\vspace{0.1in}
 {\bf NASA Hubble 25th Anniversary Commendation}, HST Science Team, 2016 \\ %	CHECK THIS DATE
 {\bf Ray and Constance Chandler Fellowship}, 2014-2015 \\
 {\bf NASA Group Achievement Award}, HST SM4 Servicing Implementation Team, 2010 \\
 {\bf Cliff E. Smith and Ruth Kinnell Graduate Fellowship}, 2007 - 2008 
 %    
-\section{RESEARCH} 
-\vspace{-.2in}
-\begin{center}
-\line(1,0){425}
-\end{center}
-\vspace{-.3in}
-\vspace{0.1in}
+\sectiontitle{Research} 
+%\vspace{0.1in}
 {\bf ASAS-SN15oz} \hspace{179pt} \\
-\hspace*{24pt}Supervisor: Stefano Valenti\\
+\hspace*{24pt}Supervisor: Stefano Valenti, 2016-present\\
 \hspace*{24pt}Analyze spectroscopic and photometric data to characterize the progenitorof ASAS-SN15oz.\\
 {\bf Extinction in the LMC}\hspace{149.95pt} \\
-\hspace*{24pt}Supervisor: Jesus Maiz-Apellaniz\\
+\hspace*{24pt}Supervisor: Jesus Maiz-Apellaniz, 2015-present\\
 \hspace*{24pt}Analyze long-slit HST/STIS spectra to create a family of UV-optical extinction laws. \\
 {\bf Telluric Line Correction using PWV Measurements} \hspace{2pt} \\
-\hspace*{24pt}Supervisor: Michael Wood-Vasey\\
+\hspace*{24pt}Supervisor: Michael Wood-Vasey, Fall 2015\\
 \hspace*{24pt}Correct sky lines using precipitable water vapor levels measured from GPS stations. \\
 {\bf  Supernova 1993J}\hspace{180pt} \\
-\hspace*{24pt}Supervisor: Alex Filippenko \\
-\hspace*{24pt}Find the companion to SN1993J using HST FUV/NUV Spectroscopy and HST FUV imaging \\
+\hspace*{24pt}Supervisor: Alex Filippenko, 2013-2016 \\
+\hspace*{24pt}Find the companion to SN1993J using HST FUV/NUV Spectroscopy and FUV imaging \\
 {\bf  Characterization of Massive Stars in R136 } \hspace{45pt} \\
-\hspace*{24pt}Supervisor: Paul A. Crowther\\
+\hspace*{24pt}Supervisor: Paul A. Crowther, 2011-2014\\
 \hspace*{24pt}Calibrate HST/STIS FUV and optical spectra to characterize the most massive stars. \\
 {\bf CANDELS Supernova Project}\hspace{116pt}\\
-\hspace*{24pt}Supervisor: Adam Riess \\
+\hspace*{24pt}Supervisor: Adam Riess, 2011-2013 \\
 \hspace*{24pt}Search for high-redshift type Ia supernovae in the CLASH/CANDELS images.\\
 {\bf  A New Calibration of the Tully-Fisher Relation and Estimate of Hubble's Constant} \\ %\hspace*{265pt} \\
-\hspace*{24pt}Supervisor: Douglas Leonard\\
+\hspace*{24pt}Supervisor: Douglas Leonard, 2006-2009\\
 \hspace*{24pt}Master's thesis project to find $\rm{H_0}$ using a new sample of cepheids and the Tully-Fisher relation.   \\
 {\bf Photometry of Open Star Clusters } \hspace{87pt}\\
-\hspace*{24pt}Supervisor: Eric Sandquist\\
+\hspace*{24pt}Supervisor: Eric Sandquist, Spring 2009\\
 \hspace*{24pt}Observe and reduce observations from the Mount Laguna Observatory. \\ 
 {\bf Pre-Service Teacher: Universe Adventure} \hspace{56pt}\\
-\hspace*{24pt}Supervisor: George Smoot \\
-\hspace*{24pt}Create content for the Universe Adventure Website ({\color{blue}\url{http://universeadventure.org}}) 
+\hspace*{24pt}Supervisor: George Smoot, Summer 2005 \\
+\hspace*{24pt}As laboratory experience for future teachers, create content for the Universe Adventure \\
+\hspace*{24pt}Website ({\color{blue}\url{http://universeadventure.org}}) 
 %
-\section{MENTORING} 
-\vspace{-.2in}
-\begin{center}
-\line(1,0){425}
-\end{center}
-\vspace{-.3in}
-\vspace{0.1in}
-Kenneth Hart: characterizating the HST/COS and HST/STIS NUV detector vignetting. \\
-Inna Bojinova: characterizing the HST/COS throughput as a function of wavelength. \\
-Martha Saladino: characterizing the HST/COS throughput as a function of time. 
+\sectiontitle{Mentoring} 
+%\vspace{0.1in}
+Supervised three summer students as part of the Space Astronomy Summer Program \\
+Mentored two junior Research and Instrument Analysts
 %
-\section{INVITED TALKS}
-\vspace{-.2in} 
-\begin{center}
-\line(1,0){425}
-\end{center}
-\vspace{-.25in} 
-\vspace{0.1in}
-California State Summer School for Mathematics and Science, University of Calif. at Davis, 2016\\
+\sectiontitle{Invited\\Talks}
+%\vspace{0.1in}
+Python in Astronomy Keynote, Lorentz Center, 2017\\
+California State Summer School for Mathematics and Science, UC Davis, 2016, 2017\\
 Stellar and Extragalactic Astronomy Lunch, Goddard Space Flight Center, 2014
 %
-\section{REFEREED PUBLICATIONS}
-\vspace{-.2in} 
-\begin{center}
-\line(1,0){425}
-\end{center}
-\vspace{-.25in} 
-\vspace{0.1in}
+\sectiontitle{Refereed\\Publications}
+%\vspace{0.1in}
+{\bf Bostroem, K. A.}, et al., 2018, in prep\\
+The Astropy Collaboration, [29 people], {\bf Bostroem, K. A.}et al., 2018, in prep\\
+Zapartas, E., [4 people], {\bf Bostroem, K. A.}, et al., 2017, ApJ, 842, 125\\
 Crowther, P. A., Caballero-Nieves, S. M., {\bf Bostroem, K. A.}, et al., 2016, MNRAS, 458, 624\\
-Fox, O. D., Smith, N., Ammons, S. M., et al., 2015, MNRAS, 454, 4366\\
+Fox, O. D., Smith, [3 people], {\bf Bostroem, K. A.}, et al., 2015, MNRAS, 454, 4366\\
 Fox, O. D., {\bf Azalee Bostroem, K.}, Van Dyk, S. D., et al., 2014, ApJ, 790, 17\\
-Rodney, S. A., Riess, A. G., Strolger, L.-G., et al., 2014, AJ, 148, 13\\
-Astropy Collaboration, Robitaille, T. P., Tollerud, E. J., et al., 2013, A\&A, 558, A33 \\
-Please see: \color{blue}\url{http://bit.ly/2iUeoax }\color{black}\hspace*{0pt} for a complete list of publications 
+Rodney, S. A., [30 people], {\bf Bostroem, K. A.}, et al., 2014, AJ, 148, 13\\
+Astropy Collaboration, [29 people], {\bf Bostroem, K. A.}, et al., 2013, A\&A, 558, A33 \\
 %
-\section{PROPOSALS AND GRANTS}
-\vspace{-.2in} 
-\begin{center}
-\line(1,0){425}
-\end{center}
-\vspace{-.25in} 
-\vspace{0.1in}
-Early Spectroscopy of Supernovae with Swift and Floyds; PI: S. Valenti; \\
+\sectiontitle{Proposals\\\& Grants}
+%\vspace{-0.3in}
+The Global Supernova Project; Keck, 2017A, 2017B, 2018A; PI: Valenti; \\
+\hspace*{24pt}{\bf CoI: K. A. Bostroem} \\
+Early Spectroscopy of Supernovae with Swift and Floyds; Swift, LCO; PI: Valenti; \\
 \hspace*{24pt} {\bf Bostroem funded: \$30,000} \\
-UV Spectroscopic Signatures from Type Ia SNe Strongly Interacting with a CSM; PI: O. Fox; \\
-\hspace*{24pt}CoI: K. A. Bostroem \\
-The Optical-UV Extinction Law in 30 Doradus; PI: J. Maiz-Apellaniz; \\
- \hspace*{24pt}{\bf Admin PI: K. A. Bostroem}; Bostroem funded: \$58,500 \\
-Long-Lost Companions: A Search for the Binary Secondaries of Three Nearby SNe; PI: O. Fox; \\
-\hspace*{24pt}CoI: K. A. Bostroem \\
-Uncovering the Putative B-Star Binary Companion of the Sn 1993J Progenitor; PI: O. Fox; \\
-\hspace*{24pt}CoI: K. A. Bostroem; {\bf Bostroem funded: \$21,000} \\
-UV Spectroscopic Signatures from Type Ia SNe Strongly Interacting with a CSM; PI: O. Fox; \\
-\hspace*{24pt}CoI: K. A. Bostroem  \\
+UV Spectroscopic Signatures from Type Ia SNe Strongly Interacting with a CSM; HST; PI: Fox; \\
+\hspace*{24pt}{\bf CoI: K. A. Bostroem} \\
+The Optical-UV Extinction Law in 30 Doradus; Hubble Space Telescope; PI: Maiz-Apellaniz; \\
+ \hspace*{24pt}{\bf Admin PI: K. A. Bostroem; Bostroem funded: \$58,500} \\
+Long-Lost Companions: A Search for the Binary Secondaries of Three Nearby SNe; HST; \\
+\hspace*{24pt}PI: Fox; CoI; {\bf K. A. Bostroem} \\
+Uncovering the Putative B-Star Binary Companion of the Sn 1993J Progenitor; HST; PI: Fox; \\
+\hspace*{24pt}{\bf CoI: K. A. Bostroem}; {\bf Bostroem funded: \$21,000} \\
+UV Spectroscopic Signatures from Type Ia SNe Strongly Interacting with a CSM; HST; PI: Fox; \\
+\hspace*{24pt}{\bf CoI: K. A. Bostroem}  \\
 15 HST Calibration Proposals including {\bf 6 with Bostroem as PI}
 %
-\section{HST INSTRUMENT SUPPORT} 
-\vspace{-.2in}
-\begin{center}
-\line(1,0){425}
-\end{center}
-\vspace{-.3in}
-\vspace{0.1in}
-{\bf HST/COS and HST/STIS Calibration Pipeline Lead} \\
-{\bf Instrument Monitoring and Calibration for HST/COS an HST/STIS} \\
-{\bf HST/COS and HST/STIS Community Support Deputy} 
-%
-\section{TECHNICAL REPORTS}
-\vspace{-.2in} 
-\begin{center}
-\line(1,0){425}
-\end{center}
-\vspace{-.25in} 
-\vspace{0.1in}
+\sectiontitle{Posters\\\& Technical\\Reports}
+{\bf Bostroem, K. A.}, et al., Spectral Types and Wind Velocities for Massive Stars in R136, 2014\\
+{\bf Bostroem, K. A.}, et al., New HST/STIS Spectroscopy of Massive Members of R136 in 30 Doradus, 2013\\
+{\bf Bostroem, K. A.}, et al., Long-Slit Spectroscopy fo 30 Doradus, Poster, 2013\\
 {\bf Bostroem, K. A.}, Aloisi, A., Bohlin, R., Hodge, P., \& Proffitt, C. 2012, Tech. rep \\
 {\bf Bostroem, K. A.}, \& Proffitt, C. 2011, STIS Data Handbook v. 6.0\\
 16 technical reports with {\bf Bostroem} as co-author; see \color{blue}\url{http://bit.ly/2iUeoax }\color{black}\hspace*{0pt} for details
- %
-\section{EMPLOYMENT}
-\vspace{-.2in} 
-\begin{center}
-\line(1,0){425}
-\end{center}
-\vspace{-.3in} 
-\vspace{0.1in} 
-    {\bf Graduate Student Researcher}, University of California at Davis, 2016 \\
+%
+\sectiontitle{Instrument\\Support} 
+HST/COS and HST/STIS Calibration Pipeline Lead, Community Support Deputy, and instrument monitoring and calibration
+%
+\sectiontitle{Observing\\Experience}
+Optical Spectroscopy and Imaging ({\it Lick Observatory/KAST, Nickel})\\
+Optical Spectroscopy ({\it Keck/LRIS})\\
+Optical Imaging ({\it Mount Laguna Observatory/40-inch})
+%
+\sectiontitle{Employment}
+    {\bf Graduate Student Researcher}, University of California at Davis, 2016-present \\
     {\bf Supernova Spectroscopy Analyst}, University of Pittsburgh, Fall 2015 \\
     {\bf Research and Instrument Analyst}, Space Telescope Science Institute, 2009 - 2014 
 %
-\section{TEACHING AND OUTREACH}
-\vspace{-.2in} 
-\begin{center}
-\line(1,0){425}
-\end{center}
-\vspace{-.24in} 
-\vspace{0.1in}
+\sectiontitle{Teaching\\\& Outreach}
    {\bf Physics Teaching Assistant}, University of California at Davis, Fall 2014-present \\
    {\bf  Workshop Leader}, Software Carpentry Workshops, 15 workshops internationally, 2012-present \\	
    {\bf Python Lesson Maintainer}, Software Carpentry Lesson Materials, 2014-2016\\
    {\bf  Astronomy Lab Instructor}, San Diego State University, Fall 2006 - Spring 2009  \\
    {\bf Project Astro Astronomer}, San Diego, CA, Fall 2007 - Spring 2008 \\
-   {\bf Mathematics Teacher and Curriculum Designer}, Ross Valley Summer School, Summer 2006 \\
+   {\bf Mathematics Teacher and Curriculum Designer}, Ross Valley Summer School, 2006 \\
    {\bf Mathematics Student Teacher}, Poughkeepsie High School,  Fall 2006 \\
    {\bf Science Teacher and Curriculum Designer}, Crossroads Summer Camp, Summer 2003, 2004 \\
-\end{resume}
+\end{llist}
 \end{document}
 
 
