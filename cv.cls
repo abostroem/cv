@@ -20,7 +20,7 @@
 % on the next line if the sectiontitle is too long.
  
 \newenvironment{llist}{\begin{list}{}{\setlength
- \labelwidth{1.025in}\setlength\leftmargin{\labelwidth}\addtolength
+ \labelwidth{1.05in}\setlength\leftmargin{\labelwidth}\addtolength
  \leftmargin{\labelsep}\itemsep 5pt plus 2pt minus 2pt
  \parsep 10pt plus 2pt minus 2pt
  %% Set the depth of the title to 0 in case more than one line.
