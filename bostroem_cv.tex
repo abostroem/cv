@@ -50,14 +50,13 @@
 \setlength{\headsep}{0.2in}     % space between header and text
 \setlength{\headheight}{12pt}   % make room for header
 \usepackage{fancyhdr}  % use fancyhdr package to get 2-line header
-\renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
+%\renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
 \pagestyle{fancy}
 \fancyhf{}
-\lhead{}
-\rhead{K. Azalee Bostroem, CV, p. \thepage}
-
-
+\lhead{K. Azalee Bostroem}
+\rhead{\thepage}
 \begin{document} 
+\thispagestyle{empty}
 \section{{\LARGE \bf{K. Azalee Bostroem}}}
 {\rule{\linewidth}{0.5mm}} \\
 \begin{minipage}{0.55\textwidth}
@@ -80,6 +79,8 @@ Davis, CA
 %-------------------------------------------------------------
 %-----------------EMPLOYMENT-----------------------
 %-------------------------------------------------------------
+%\vspace{-0.1in}
+%\sectiontitle{Citizenship} U.S. Citizen
 \vspace{-0.1in}   
 \sectiontitle{Employment}
     \textsc{Graduate Student Researcher}\hfill2015-Present \\
@@ -115,15 +116,17 @@ B.A. in Mathematics \\
 \begin{minipage}[l]{0.7\textwidth}\vspace{0.15cm}
 California State and New York State Secondary Teaching Certifications in Mathematics \\
 \end{minipage}
+
 %-------------------------------------------------------------
 %--------------------HONORS----------------------------
 %-------------------------------------------------------------
 \vspace{-0.1in}   
 \sectiontitle{Honors}
+% TODO: add Fellowship
 NASA Hubble 25th Anniversary Commendation, HST Science Team \hfill 2016 \\ %	CHECK THIS DATE
 Ray and Constance Chandler Fellowship \hfill 2014-2015 \\ %$5000?
 NASA Group Achievement Award, HST SM4 Servicing Implementation Team \hfill2010 \\
-Cliff E. Smith and Ruth Kinnell Graduate Fellowship \hfill 2007-2008\\ %$2000
+Cliff E. Smith and Ruth Kinnell Graduate Fellowship \hfill 2007-2008\\ %$1500
 %-------------------------------------------------------------
 %----------RESEARCH INTERESTS-------------
 %-------------------------------------------------------------
@@ -200,8 +203,12 @@ Pre-Service Teacher Program.\\
 %-------------------------------------------------------------
 %--------------------Proposals & Grants---------------
 %-------------------------------------------------------------
-\vspace{-0.1in}   
+\vspace{-0.1in}
 \sectiontitle{Proposals\\\& Grants}
+13.1 hours, Gemini Observatory \hfill 2020A\\
+\textsc{Progenitors of Type II Supernovae from Nebular Spectra}\\
+\textbf{P-I: K. Azalee Bostroem}\\
+\\   
 \$700, Diversity and Inclusion in Physics Travel Award\hfill 2019\\
 \textsc{American Astronomical Society Winter Meeting, 2020}\\
 \\
@@ -257,7 +264,6 @@ P-I: Ori Fox \\
 P-I: Jesus Maiz-Apellaniz \\
 {\bf Admin P-I: K. Azalee Bostroem} \\
 \\
-
 Summer funding, 3 orbits, Hubble Space Telescope General Observer Program \hfill 2015\\ %Cycle 22; 
 \begin{minipage}[l]{0.7\textwidth}\vspace{0.15cm}
 Co-I: \textsc{Uncovering the Putative B-Star Binary Companion of the SN 1993J Progenitor}
@@ -343,6 +349,8 @@ P-I: R. A. Osten\\%, {\bf K. A. Bostroem}, C. R. Proffitt
 %-------------------------------------------------------------
 \vspace{-0.1in}  
 \sectiontitle{Talks}
+American Astronomical Society 235th Meeting Dissertation Talk, Honolulu, HI \hfill Jan 2020\\ \vspace{-0.1in} 
+\\
 Astrophysics and Cosmology Symposium, Davis, CA \hfill Sep 2019\\\vspace{-0.1in}  
 \\
 The Extragalactic Explosive Universe, Garching, DE\hfill Sep 2019\\ \vspace{-0.1in}  
@@ -376,6 +384,7 @@ STScI TIPS/JIM Monthly Meeting, Baltimore, MD\hfill Mar 2012\\\vspace{-0.1in}
 \vspace{-0.1in}  
 \sectiontitle{Mentored \\Students} 
 %\vspace{0.1in}
+%TODO: add Yize
 Isabele Ye (w/ Stefano Valenti) \hfill 2018-2019\\
 \begin{minipage}[l]{0.7\textwidth}\vspace{0.15cm}
 Monitor the data acquisition of Type II SNe observed with the Las Cumbres Observatory as part of the Global Supernova Project to ensure the complete light curve is observed.\\
@@ -457,6 +466,7 @@ Maintained the internal and external web pages, created and delivered Space Tele
 %----------SERVICE & OUTREACH-----------------
 %-------------------------------------------------------------
 \sectiontitle{Service \\\& Outreach}
+%TODO: add MDAS talk
 \textsc{Code Review Leader}, Davis, CA\hfill 2015-Present\\
 \begin{minipage}[l]{0.7\textwidth}\vspace{0.15cm}
 Organize, and lead weekly meetings attended by graduate students, post-docs, research staff, and faculty to improve and share coding knowledge and best practices.\\
@@ -559,14 +569,14 @@ Created lesson plans and taught a full course load (five periods) of high school
 \begin{minipage}[l]{0.7\textwidth}\vspace{0.15cm}
 Created a curriculum and lesson plans for and taught sixth, seventh, and eighth grade science courses.
 \end{minipage}\vspace{0.15cm}
-%\end{llist}
 %-------------------------------------------------------------
 %------------------PUBLICATIONS---------------------
 %-------------------------------------------------------------
-%\newpage
-%\section{{\LARGE \bf{Publication List}}}
-%{\rule{\linewidth}{0.5mm}} \\
-%\begin{llist}
+\end{llist}
+\newpage
+\section{{\LARGE \bf{Publication List}}}
+{\rule{\linewidth}{0.5mm}} \\
+\begin{llist}
 \input{refereed_pubs.tex}
 \input{technical_reports.tex}
 \input{posters.tex}
