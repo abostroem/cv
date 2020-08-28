@@ -1,0 +1,84 @@
+\documentclass[10pt]{cv}
+\font\cap=cmcsc10
+\usepackage{amsmath}
+
+\topmargin 0pt
+\headheight 0pt
+\headsep 0pt
+\textheight 674pt
+\pagestyle{empty}
+\parindent 0.08in
+\parskip \baselineskip
+\topmargin 0in
+\footskip 1in
+%\oddsidemargin 0in
+\oddsidemargin -0.25in
+%\evensidemargin 0in
+\evensidemargin -0.25in
+
+\textwidth 6.9in
+
+\setlength{\topmargin}{-0.25in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\topskip}{0.75in}
+\setlength{\textheight}{9in}
+\pagestyle{myheadings}
+\setlength{\parskip}{0in}
+
+\usepackage{revnum}
+%set the number in the second set of curly braces to the number you want displayed on
+%the first page
+%setcounter{page}{2}
+  
+\usepackage{hyperref}
+\usepackage{bibentry}
+\usepackage{url}
+\usepackage{color}
+\usepackage{aas_macros}
+\usepackage{hanging}
+\usepackage{natbib}
+\bibliographystyle{apj}
+\newcommand\hangbibentry[1]{%
+    \smallskip\par\hangpara{1em}{1}\bibentry{#1}\smallskip\par %{indent}{afterline}
+}
+
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font  
+\setlength{\topmargin}{-0.6in}  % Start text higher on the page 
+\setlength{\textheight}{9.5in}  % increase textheight to fit more on a page
+\setlength{\headsep}{0.2in}     % space between header and text
+\setlength{\headheight}{12pt}   % make room for header
+\usepackage{fancyhdr}  % use fancyhdr package to get 2-line header
+\renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{}
+\rhead{K. Azalee Bostroem, p. \thepage}
+
+\begin{document} 
+\section{{\LARGE \bf{Publication List}}}
+{\rule{\linewidth}{0.5mm}} \\
+\begin{minipage}{0.55\textwidth}
+Department of Physics \\
+University of California, Davis \\
+Davis, CA
+\end{minipage}
+\begin{minipage}{0.45\textwidth}
+\begin{flushright}
+\vspace{0.25cm}
+\color{blue}\url{kabostroem@ucdavis.edu}\\
+\color{blue}\url{https://github.com/abostroem} \\
+\color{blue}\url{https://abostroem.wixsite.com/home}
+\end{flushright}
+\end{minipage} \\
+{\rule{\linewidth}{0.5mm}} 
+\vspace{-.5em}
+%\begin{resume}
+
+\begin{llist}
+\input{refereed_pubs.tex}
+\input{technical_reports.tex}
+\input{posters.tex}
+\end{llist}
+\end{document}
